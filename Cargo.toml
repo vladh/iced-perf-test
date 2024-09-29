@@ -1,0 +1,17 @@
+[package]
+name = "iced-perf-test"
+version = "0.1.0"
+authors = ["Vlad-Stefan Harbuz <vlad@vladh.net>"]
+edition = "2021"
+publish = false
+
+[dependencies]
+csv = "1.3.0"
+iced = "0.13.1"
+# iced = { path = "../iced", features = ["advanced", "canvas", "debug", "wgpu"], default-features = false }
+# iced = { git = "https://github.com/vladh/iced", features = ["advanced", "canvas", "debug", "wgpu"], default-features = false }
+# iced = { git = "https://github.com/iced-rs/iced", features = ["advanced", "canvas", "debug", "wgpu"], default-features = false }
+
+[profile.profiling]
+inherits = "release"
+debug = true

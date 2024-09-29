@@ -1,0 +1,4 @@
+/target
+/flamegraph*
+/perf*
+/profile.json
